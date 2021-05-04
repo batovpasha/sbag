@@ -18,5 +18,17 @@
   "bugs": {
     "url": "https://github.com/batovpasha/sbag/issues"
   },
-  "homepage": "https://github.com/batovpasha/sbag#readme"
+  "homepage": "https://github.com/batovpasha/sbag#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.25.0",
+    "eslint-config-webbylab": "^5.4.1",
+    "eslint-plugin-fetch": "0.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-more": "^1.0.3",
+    "eslint-plugin-no-require-lodash": "^1.1.0",
+    "eslint-plugin-prefer-spread": "^1.0.3",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-security": "^1.4.0"
+  }
 }
