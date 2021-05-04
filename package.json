@@ -1,0 +1,22 @@
+{
+  "name": "sbag",
+  "version": "0.1.0",
+  "description": "A schema-based API generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/batovpasha/sbag.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Pavlo Batov <batovpasha@gmail.com>",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/batovpasha/sbag/issues"
+  },
+  "homepage": "https://github.com/batovpasha/sbag#readme"
+}
