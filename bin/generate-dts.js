@@ -76,7 +76,7 @@ async function generateDts() {
     const interfaces = Object.values(interfacesAndMethodSignatures).flat().map(({ interface }) => interface);
     const apiInterface = generateApiInterface(interfacesAndMethodSignatures);
     const dts = `
-        declare module "sbag" {
+        declare module 'sbag' {
             ${interfaces.join('\n')}
             ${apiInterface}
 
@@ -88,7 +88,11 @@ async function generateDts() {
         singleQuote : true
     });
 
-    fs.writeFileSync(path.join(process.cwd(), 'index.d.ts'), formattedDts);
+    const dtsFilePath = path.join(process.cwd(), 'index.d.ts');
+
+    fs.writeFileSync(dtsFilePath, formattedDts);
+
+    console.log(`d.ts was successfully generated to ${dtsFilePath}`);
 }
 
 generateDts().catch(err => {
